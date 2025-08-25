@@ -6,7 +6,7 @@ services:
     working_dir: /app
     volumes:
       - .:/app
-    command: node main.js
+    command: npm install --f && node main.js
     ports:
       - "3001-3003:3001-3003" # see the view from the camera mounted on your bot head: http://localhost:3000/
 
