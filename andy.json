@@ -1,6 +1,6 @@
 {
-    "name": "andy",
+    "name": "Murakames",
 
-    "model": "gpt-4o-mini"
+    "model": "ollama"
 
 }
