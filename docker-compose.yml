@@ -7,15 +7,12 @@ services:
     volumes:
       - .:/app
     command: >
-      bash -lc "
-      apt-get update &&
+      bash -lc 'apt-get update &&
       apt-get install -y --no-install-recommends
-        python3 python-is-python3 make g++ pkg-config
-        libgl1-mesa-dev libglu1-mesa-dev libxi-dev &&
+      python3 python-is-python3 make g++ pkg-config libgl1-mesa-dev libglu1-mesa-dev libxi-dev &&
       rm -rf /var/lib/apt/lists/* &&
       (npm ci || npm install) &&
-      node main.js
-      "
+      node main.js'
     ports:
       - "3001-3003:3001-3003" # see the view from the camera mounted on your bot head: http://localhost:3000/
 
