@@ -1,5 +1,5 @@
 const settings = {
-    "minecraft_version": "1.21.8", // or specific version like "1.21.1"
+    "minecraft_version": "1.21.6", // or specific version like "1.21.1"
     "host": "100.87.188.116", // or "localhost", "your.ip.address.here"
     "port": 55539,
     "auth": "offline", // or "microsoft"
